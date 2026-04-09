@@ -131,21 +131,33 @@ function initContactForm() {
 
     if (!valid) return;
 
-    const submitBtn = form.querySelector('[type="submit"]');
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Enviando...";
+    // Coleta os dados do formulário
+    const name     = form.querySelector("#name").value.trim();
+    const phone    = form.querySelector("#phone").value.trim();
+    const email    = form.querySelector("#email").value.trim();
+    const occasion = form.querySelector("#occasion").value;
+    const message  = form.querySelector("#message").value.trim();
 
-    // Simula chamada à API — substitua pelo seu endpoint real
-    setTimeout(() => {
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Enviar Encomenda";
-      showFeedback(
-        feedback,
-        "✓ Encomenda recebida! Entraremos em contato em até 24h.",
-        "success"
-      );
-    }, 1500);
+    // Monta a mensagem para o WhatsApp
+    const texto = [
+      `Olá Vovó Bel! Gostaria de fazer uma encomenda. 🎂`,
+      ``,
+      `*Nome:* ${name}`,
+      phone    ? `*WhatsApp:* ${phone}`   : null,
+      email    ? `*E-mail:* ${email}`     : null,
+      occasion ? `*Ocasião:* ${occasion}` : null,
+      `*Detalhes:* ${message}`,
+    ]
+      .filter((linha) => linha !== null)
+      .join("\n");
+
+    // Número da Vovó Bel — troque pelo número real
+    const numero = "5511999999999";
+
+    // Abre o WhatsApp com a mensagem já preenchida
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(texto)}`, "_blank");
+
+    form.reset();
   });
 }
 
