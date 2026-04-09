@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bolos artesanais feitos com amor pela Vovó Bel. Encomende o seu bolo especial." />
+    <meta name="author" content="Vovó Bel" />
+
+    <title>Vovó Bel — Bolos Artesanais</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="container">
+        <a href="#hero" class="logo">
+          <span class="logo__icon">✦</span>
+          Vovó Bel
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#hero"    class="nav__link">Início</a></li>
+            <li><a href="#sobre"   class="nav__link">Nossa História</a></li>
+            <li><a href="#cardapio" class="nav__link">Cardápio</a></li>
+            <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+            <li><a href="#contato" class="nav__link nav__link--cta">Encomendar</a></li>
+          </ul>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===================== HERO ===================== -->
+      <section class="hero" id="hero">
+        <!-- Imagem de fundo com overlay -->
+        <div class="hero__bg">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1600&q=80&auto=format&fit=crop"
+            alt="Bolo de chocolate decorado"
+            class="hero__img"
+          />
+          <div class="hero__overlay"></div>
+        </div>
+
+        <div class="container hero__body">
+          <div class="hero__badge">Feito com amor desde 2015</div>
+          <h1 class="hero__title">
+            Bolos que contam<br />
+            <em>a sua história</em>
+          </h1>
+          <p class="hero__subtitle">
+            Cada bolo é uma obra única, feita artesanalmente<br />
+            com ingredientes selecionados para o seu momento especial.
+          </p>
+          <div class="hero__actions">
+            <a href="#cardapio" class="btn btn--wine">Ver Cardápio</a>
+            <a href="#contato"  class="btn btn--outline-white">Fazer Encomenda</a>
+          </div>
+        </div>
+
+        <!-- Scroll hint -->
+        <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+          <span class="hero__scroll-line"></span>
+        </a>
+      </section>
+
+      <!-- ===================== DIFERENCIAIS ===================== -->
+      <section class="diferenciais">
+        <div class="container">
+          <div class="diferenciais__grid">
+            <div class="diferencial">
+              <span class="diferencial__icon">🎂</span>
+              <div>
+                <strong>100% Artesanal</strong>
+                <p>Feito à mão com carinho e dedicação</p>
+              </div>
+            </div>
+            <div class="diferencial">
+              <span class="diferencial__icon">🌿</span>
+              <div>
+                <strong>Ingredientes Selecionados</strong>
+                <p>Qualidade e frescor em cada detalhe</p>
+              </div>
+            </div>
+            <div class="diferencial">
+              <span class="diferencial__icon">🎁</span>
+              <div>
+                <strong>Personalizado para Você</strong>
+                <p>Design exclusivo para cada ocasião</p>
+              </div>
+            </div>
+            <div class="diferencial">
+              <span class="diferencial__icon">🚚</span>
+              <div>
+                <strong>Entrega com Cuidado</strong>
+                <p>Chegando perfeito até a sua festa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SOBRE ===================== -->
+      <section class="sobre" id="sobre">
+        <div class="container">
+          <div class="sobre__grid">
+            <div class="sobre__images">
+              <div class="sobre__img-main">
+                <img
+                  src="assets/images/vovo-bel-bolo.jpg"
+                  alt="Vovó Bel segurando um de seus bolos artesanais"
+                />
+              </div>
+              <div class="sobre__img-float">
+                <img
+                  src="assets/images/vovo-bel-praia.jpg"
+                  alt="Vovó Bel com os braços levantados na praia ao pôr do sol"
+                />
+              </div>
+              <div class="sobre__anos">
+                <span class="sobre__anos-num">10+</span>
+                <span class="sobre__anos-label">anos de doçura</span>
+              </div>
+            </div>
+
+            <div class="sobre__content">
+              <span class="section-eyebrow">Nossa História</span>
+              <h2 class="section-title">Nascida no Paraná,<br /><em>criada com amor</em></h2>
+              <p>
+                Nascida e criada no Paraná, Izabel de Lima, carinhosamente conhecida
+                como Vovó Bel, construiu sua história com dedicação, simplicidade e
+                muito amor. Ao longo de sua trajetória, passou por diferentes
+                experiências profissionais, mas foi na confeitaria que encontrou
+                sua verdadeira vocação.
+              </p>
+              <p>
+                Entre receitas, doces e bolos feitos com carinho, Vovó Bel transformou
+                sua paixão em propósito. Cada criação carrega mais do que sabor: traz
+                memórias, afeto e aquele toque especial de quem faz tudo com o coração.
+              </p>
+              <p>
+                Hoje, seu trabalho é sinônimo de qualidade, tradição e cuidado,
+                levando alegria e doçura para momentos únicos na vida de cada cliente.
+              </p>
+              <a href="#contato" class="btn btn--wine">Fale Conosco</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CARDÁPIO ===================== -->
+      <section class="cardapio" id="cardapio">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Nossos Sabores</span>
+            <h2 class="section-title">Cardápio de <em>Bolos</em></h2>
+            <p class="section-subtitle">Cada receita, uma experiência única</p>
+          </div>
+
+          <p class="cardapio__scroll-hint">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Deslize para ver mais
+          </p>
+          <div class="produtos">
+
+            <article class="produto">
+              <div class="produto__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=600&q=80&auto=format&fit=crop"
+                  alt="Bolo de Chocolate Belga"
+                  class="produto__img"
+                />
+                <span class="produto__tag">Mais Pedido</span>
+              </div>
+              <div class="produto__info">
+                <h3 class="produto__nome">Chocolate Belga</h3>
+                <p class="produto__desc">Massa fofinha de chocolate com ganache cremosa e raspas de chocolate belga.</p>
+                <div class="produto__footer">
+                  <span class="produto__preco">A partir de R$ 120</span>
+                  <a href="#contato" class="btn btn--wine btn--sm">Encomendar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80&auto=format&fit=crop"
+                  alt="Bolo Red Velvet"
+                  class="produto__img"
+                />
+                <span class="produto__tag produto__tag--wine">Especial</span>
+              </div>
+              <div class="produto__info">
+                <h3 class="produto__nome">Red Velvet</h3>
+                <p class="produto__desc">O clássico veludo vermelho com cobertura de cream cheese aveludada e irresistível.</p>
+                <div class="produto__footer">
+                  <span class="produto__preco">A partir de R$ 140</span>
+                  <a href="#contato" class="btn btn--wine btn--sm">Encomendar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80&auto=format&fit=crop"
+                  alt="Bolo Naked Cake de Frutas"
+                  class="produto__img"
+                />
+              </div>
+              <div class="produto__info">
+                <h3 class="produto__nome">Naked Cake de Frutas</h3>
+                <p class="produto__desc">Camadas de pão de ló, creme suíço e frutas frescas da estação. Leve e delicioso.</p>
+                <div class="produto__footer">
+                  <span class="produto__preco">A partir de R$ 160</span>
+                  <a href="#contato" class="btn btn--wine btn--sm">Encomendar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80&auto=format&fit=crop"
+                  alt="Bolo de Baunilha com Morango"
+                  class="produto__img"
+                />
+              </div>
+              <div class="produto__info">
+                <h3 class="produto__nome">Baunilha & Morango</h3>
+                <p class="produto__desc">Massa de baunilha bourbon, recheio de mousseline e morangos frescos selecionados.</p>
+                <div class="produto__footer">
+                  <span class="produto__preco">A partir de R$ 130</span>
+                  <a href="#contato" class="btn btn--wine btn--sm">Encomendar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1519869325930-281384150729?w=600&q=80&auto=format&fit=crop"
+                  alt="Bolo de Cenoura com Brigadeiro"
+                  class="produto__img"
+                />
+              </div>
+              <div class="produto__info">
+                <h3 class="produto__nome">Cenoura com Brigadeiro</h3>
+                <p class="produto__desc">O favorito do Brasil: cenoura fofinha com cobertura de brigadeiro cremoso.</p>
+                <div class="produto__footer">
+                  <span class="produto__preco">A partir de R$ 100</span>
+                  <a href="#contato" class="btn btn--wine btn--sm">Encomendar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=600&q=80&auto=format&fit=crop"
+                  alt="Bolo Personalizado"
+                  class="produto__img"
+                />
+                <span class="produto__tag produto__tag--gold">Premium</span>
+              </div>
+              <div class="produto__info">
+                <h3 class="produto__nome">Bolo Personalizado</h3>
+                <p class="produto__desc">Criamos um bolo exclusivo para a sua ocasião — sabor, design e tamanho sob medida.</p>
+                <div class="produto__footer">
+                  <span class="produto__preco">Sob consulta</span>
+                  <a href="#contato" class="btn btn--wine btn--sm">Solicitar</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== BANNER CTA ===================== -->
+      <section class="banner-cta">
+        <div class="banner-cta__bg">
+          <img
+            src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?w=1600&q=80&auto=format&fit=crop"
+            alt="Bolos decorados"
+          />
+          <div class="banner-cta__overlay"></div>
+        </div>
+        <div class="container banner-cta__body">
+          <h2>Tem um evento especial chegando?</h2>
+          <p>Faça sua encomenda com antecedência e garanta um bolo inesquecível.</p>
+          <a href="#contato" class="btn btn--white">Encomendar Agora</a>
+        </div>
+      </section>
+
+      <!-- ===================== DEPOIMENTOS ===================== -->
+      <section class="depoimentos" id="depoimentos">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Quem Provou, Aprovou</span>
+            <h2 class="section-title">O que nossos clientes<br /><em>dizem</em></h2>
+          </div>
+
+          <div class="depoimentos__grid">
+            <div class="depoimento">
+              <div class="depoimento__stars">★★★★★</div>
+              <p class="depoimento__text">"O bolo do aniversário da minha filha foi lindo e delicioso. Todos pediram o contato da confeiteira!"</p>
+              <div class="depoimento__autor">
+                <div class="depoimento__avatar">A</div>
+                <div>
+                  <strong>Ana Paula</strong>
+                  <span>Aniversário infantil</span>
+                </div>
+              </div>
+            </div>
+            <div class="depoimento">
+              <div class="depoimento__stars">★★★★★</div>
+              <p class="depoimento__text">"Encomendei o naked cake de frutas para o meu casamento. Ficou perfeito! Superou todas as expectativas."</p>
+              <div class="depoimento__autor">
+                <div class="depoimento__avatar">C</div>
+                <div>
+                  <strong>Camila & Rafael</strong>
+                  <span>Casamento</span>
+                </div>
+              </div>
+            </div>
+            <div class="depoimento">
+              <div class="depoimento__stars">★★★★★</div>
+              <p class="depoimento__text">"O Red Velvet foi a estrela da festa! Cremoso, saboroso e lindo. Já estou encomendando o próximo."</p>
+              <div class="depoimento__autor">
+                <div class="depoimento__avatar">M</div>
+                <div>
+                  <strong>Marcos Oliveira</strong>
+                  <span>Confraternização</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTATO ===================== -->
+      <section class="contato" id="contato">
+        <div class="container">
+          <div class="contato__grid">
+            <div class="contato__info">
+              <span class="section-eyebrow">Fale Conosco</span>
+              <h2 class="section-title">Faça sua<br /><em>Encomenda</em></h2>
+              <p>Preencha o formulário ou nos chame pelo WhatsApp. Respondemos em até 24h.</p>
+              <ul class="contato__lista">
+                <li>
+                  <span class="contato__lista-icon">📍</span>
+                  Rua das Flores, 123 — Seu Bairro, Cidade
+                </li>
+                <li>
+                  <span class="contato__lista-icon">📱</span>
+                  (11) 99999-9999
+                </li>
+                <li>
+                  <span class="contato__lista-icon">✉️</span>
+                  contato@doceencanto.com.br
+                </li>
+                <li>
+                  <span class="contato__lista-icon">🕐</span>
+                  Seg–Sex: 9h–18h &nbsp;|&nbsp; Sáb: 9h–14h
+                </li>
+              </ul>
+            </div>
+
+            <form class="form" id="contactForm" novalidate>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name" class="form__label">Nome</label>
+                  <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required />
+                  <span class="form__error" id="nameError"></span>
+                </div>
+                <div class="form__group">
+                  <label for="phone" class="form__label">WhatsApp</label>
+                  <input type="tel" id="phone" name="phone" class="form__input" placeholder="(11) 99999-9999" />
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label">E-mail</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required />
+                <span class="form__error" id="emailError"></span>
+              </div>
+              <div class="form__group">
+                <label for="occasion" class="form__label">Ocasião</label>
+                <select id="occasion" name="occasion" class="form__input form__select">
+                  <option value="">Selecione a ocasião</option>
+                  <option>Aniversário</option>
+                  <option>Casamento</option>
+                  <option>Chá de bebê</option>
+                  <option>Confraternização</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__label">Detalhes da encomenda</label>
+                <textarea id="message" name="message" class="form__input form__textarea" placeholder="Sabor, tamanho, data desejada..." rows="4" required></textarea>
+                <span class="form__error" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn--wine btn--full">Enviar Encomenda</button>
+              <p class="form__feedback" id="formFeedback"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="#hero" class="logo logo--white">
+              <span class="logo__icon">✦</span>
+              Vovó Bel
+            </a>
+            <p>Bolos artesanais feitos com amor e tradição para o seu momento especial.</p>
+          </div>
+          <div class="footer__links">
+            <strong>Navegação</strong>
+            <ul>
+              <li><a href="#sobre">Nossa História</a></li>
+              <li><a href="#cardapio">Cardápio</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+              <li><a href="#contato">Encomendar</a></li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <strong>Siga-nos</strong>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">WhatsApp</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; <span id="year"></span> Vovó Bel. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a
+      href="https://wa.me/5511999999999?text=Olá%20Vovó%20Bel!%20Gostaria%20de%20fazer%20uma%20encomenda."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span>Falar no WhatsApp</span>
+    </a>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
