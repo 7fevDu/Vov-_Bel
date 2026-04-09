@@ -378,6 +378,39 @@ body {
   flex-wrap: wrap;
 }
 
+/* ── Animações de entrada do Hero ── */
+
+/* Cada palavra sobe do baixo e aparece */
+.anim-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: wordReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--anim-delay, 0s);
+}
+
+@keyframes wordReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Badge e blocos menores sobem com fade simples */
+.anim-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--anim-delay, 0s);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Scroll hint */
 .hero__scroll {
   position: absolute;
