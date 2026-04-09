@@ -929,6 +929,53 @@ body {
 .cardapio__scroll-hint { display: none; }
 
 /* =============================================
+   REVEAL — Cortina que abre revelando as fotos
+   ============================================= */
+
+/* O wrapper mantém overflow hidden para a máscara não vazar */
+.reveal-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+/* A cortina: cobre a foto e desliza para a direita ao revelar */
+.reveal-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--wine);
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+  z-index: 1;
+}
+
+/* A foto começa invisible e surge junto */
+.reveal-wrap img {
+  transform: scale(1.08);
+  transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* Quando a classe .revealed é adicionada via JS */
+.reveal-wrap.revealed::after {
+  transform: scaleX(0);
+  transform-origin: right center;
+}
+
+.reveal-wrap.revealed img {
+  transform: scale(1);
+}
+
+/* Segunda foto entra com um pequeno delay */
+.reveal-wrap--delay::after {
+  transition-delay: 0.25s;
+}
+
+.reveal-wrap--delay img {
+  transition-delay: 0.25s;
+}
+
+/* =============================================
    BOTÃO FLUTUANTE WHATSAPP
    ============================================= */
 .whatsapp-float {

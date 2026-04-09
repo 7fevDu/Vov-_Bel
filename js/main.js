@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initActiveNavLinks();
   initContactForm();
   initFooterYear();
+  initReveal();
 });
 
 /* =============================================
@@ -155,6 +156,28 @@ function showFeedback(el, message, type) {
     el.textContent = "";
     el.className = "form__feedback";
   }, 6000);
+}
+
+/* =============================================
+   REVEAL — Fotos da seção "Nossa História"
+   ============================================= */
+function initReveal() {
+  const elements = document.querySelectorAll(".reveal-wrap");
+  if (!elements.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+          observer.unobserve(entry.target); // roda só uma vez
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
 }
 
 /* =============================================
